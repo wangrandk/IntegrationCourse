@@ -1,0 +1,237 @@
+<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="8/21/2018 10:03:26 AM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="10K3"
+  DTS:CreatorName="10K3\Administrator"
+  DTS:DTSID="{5B78E307-9786-49FC-BAC0-DBF3BA8391DC}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="14.0.0500.272"
+  DTS:LocaleID="1030"
+  DTS:ObjectName="Parameters"
+  DTS:PackageType="5"
+  DTS:VersionBuild="10"
+  DTS:VersionGUID="{0BFB7AAC-88CE-4CF1-A908-83CFE2413A37}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:PackageParameters>
+    <DTS:PackageParameter
+      DTS:CreationName=""
+      DTS:DataType="8"
+      DTS:DTSID="{96094490-5F6C-4BDF-B10C-83A97AB15C31}"
+      DTS:ObjectName="PackageFromFileName">
+      <DTS:Property
+        DTS:DataType="8"
+        DTS:Name="ParameterValue">Doc1.txt</DTS:Property>
+    </DTS:PackageParameter>
+    <DTS:PackageParameter
+      DTS:CreationName=""
+      DTS:DataType="8"
+      DTS:DTSID="{AD84685C-E115-4473-9A30-AE594E7EA827}"
+      DTS:ObjectName="PackageToFileName">
+      <DTS:Property
+        DTS:DataType="8"
+        DTS:Name="ParameterValue">Copycat.csv</DTS:Property>
+    </DTS:PackageParameter>
+  </DTS:PackageParameters>
+  <DTS:Variables>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{AA181E38-D609-43BF-80A8-EFCB5BB8FD79}"
+      DTS:EvaluateAsExpression="True"
+      DTS:Expression="0==1 ? false:true"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="BOOLESK">
+      <DTS:VariableValue
+        DTS:DataType="11">-1</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{49B280AE-E59D-4D00-9879-AC88DAC84878}"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="CustomerName">
+      <DTS:VariableValue
+        DTS:DataType="8">Otto</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{D5AAD3BA-1AC5-4141-8FFC-CCB7EF4F023B}"
+      DTS:EvaluateAsExpression="True"
+      DTS:Expression="@[$Project::ProjectFromLibrary] + @[$Package::PackageFromFileName]"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="FromFilePath">
+      <DTS:VariableValue
+        DTS:DataType="8">C:\From\Doc1.txt</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{B764E5CF-F9ED-46B6-85AA-5444D51922AA}"
+      DTS:EvaluateAsExpression="True"
+      DTS:Expression="(DT_DBTIMESTAMP)&quot;08-21-2018 12:34:56&quot;"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="TestDate">
+      <DTS:VariableValue
+        DTS:DataType="7">8/21/2018 12:34:56 PM</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{7CB5289A-A3BE-4FE2-948B-C36D6FAB8F6D}"
+      DTS:EvaluateAsExpression="True"
+      DTS:Expression="@[$Project::ProjectToLibrary]+ @[$Package::PackageToFileName]"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="ToFilePath">
+      <DTS:VariableValue
+        DTS:DataType="8">C:\To\Copycat.csv</DTS:VariableValue>
+    </DTS:Variable>
+  </DTS:Variables>
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\Container A"
+      DTS:CreationName="STOCK:SEQUENCE"
+      DTS:Description="Container A"
+      DTS:DTSID="{372AD855-79AC-4AB6-8160-309E0D523649}"
+      DTS:ExecutableType="STOCK:SEQUENCE"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Container A">
+      <DTS:Variables>
+        <DTS:Variable
+          DTS:CreationName=""
+          DTS:DTSID="{8D07FD21-5B16-44B6-92B3-EE60EA158271}"
+          DTS:EvaluateAsExpression="True"
+          DTS:Expression="(DT_DECIMAL, 2) 1.20"
+          DTS:IncludeInDebugDump="2345"
+          DTS:Namespace="User"
+          DTS:ObjectName="VariableA">
+          <DTS:VariableValue
+            DTS:DataType="14">1.2</DTS:VariableValue>
+        </DTS:Variable>
+      </DTS:Variables>
+      <DTS:Executables>
+        <DTS:Executable
+          DTS:refId="Package\Container A\Container B"
+          DTS:CreationName="STOCK:SEQUENCE"
+          DTS:Description="Container B"
+          DTS:DTSID="{FD0D129C-0CFE-44F5-858B-1F723520F3D4}"
+          DTS:ExecutableType="STOCK:SEQUENCE"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="Container B">
+          <DTS:Variables>
+            <DTS:Variable
+              DTS:CreationName=""
+              DTS:DTSID="{7FF96874-2647-4FBC-80A7-57126C0E9D5F}"
+              DTS:IncludeInDebugDump="6789"
+              DTS:Namespace="User"
+              DTS:ObjectName="VariableB">
+              <DTS:VariableValue
+                DTS:DataType="14">0</DTS:VariableValue>
+            </DTS:Variable>
+          </DTS:Variables>
+          <DTS:Executables>
+            <DTS:Executable
+              DTS:refId="Package\Container A\Container B\Container C"
+              DTS:CreationName="STOCK:SEQUENCE"
+              DTS:Description="Container C"
+              DTS:DTSID="{E48038DB-9159-42D6-9833-4FA241911223}"
+              DTS:ExecutableType="STOCK:SEQUENCE"
+              DTS:LocaleID="-1"
+              DTS:ObjectName="Container C">
+              <DTS:Variables>
+                <DTS:Variable
+                  DTS:CreationName=""
+                  DTS:DTSID="{57B42010-118E-4FDC-B7BC-735149BB80F1}"
+                  DTS:EvaluateAsExpression="True"
+                  DTS:Expression="&quot;C:\\new\\trains&quot;"
+                  DTS:IncludeInDebugDump="2345"
+                  DTS:Namespace="User"
+                  DTS:ObjectName="Variable">
+                  <DTS:VariableValue
+                    DTS:DataType="8">C:\new\trains</DTS:VariableValue>
+                </DTS:Variable>
+                <DTS:Variable
+                  DTS:CreationName=""
+                  DTS:DTSID="{A99C2C61-03A5-4C9D-A192-AF0A4E7D0B8A}"
+                  DTS:EvaluateAsExpression="True"
+                  DTS:Expression="DATEPART(&quot;week&quot;,@[User::TestDate])"
+                  DTS:IncludeInDebugDump="2345"
+                  DTS:Namespace="User"
+                  DTS:ObjectName="VariableC">
+                  <DTS:VariableValue
+                    DTS:DataType="3">34</DTS:VariableValue>
+                </DTS:Variable>
+              </DTS:Variables>
+              <DTS:Executables>
+                <DTS:Executable
+                  DTS:refId="Package\Container A\Container B\Container C\Copy file"
+                  DTS:CreationName="Microsoft.FileSystemTask"
+                  DTS:Description="File System Task"
+                  DTS:DTSID="{BADE655E-76E5-4A66-B68C-86F52955EAF6}"
+                  DTS:ExecutableType="Microsoft.FileSystemTask"
+                  DTS:LocaleID="-1"
+                  DTS:ObjectName="Copy file"
+                  DTS:TaskContact="File System Task;Microsoft Corporation; SQL Server vNext CTP2.0; © 2017 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+                  DTS:ThreadHint="0">
+                  <DTS:Variables />
+                  <DTS:ObjectData>
+                    <FileSystemData
+                      TaskOverwriteDestFile="True"
+                      TaskSourcePath="User::FromFilePath"
+                      TaskIsSourceVariable="True"
+                      TaskDestinationPath="User::ToFilePath"
+                      TaskIsDestinationVariable="True" />
+                  </DTS:ObjectData>
+                </DTS:Executable>
+              </DTS:Executables>
+            </DTS:Executable>
+          </DTS:Executables>
+        </DTS:Executable>
+      </DTS:Executables>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
+<!--If you manually edit this section and make a mistake, you can delete it. -->
+<!--The package will still be able to load normally but the previous layout information will be lost and the designer will automatically re-arrange the elements on the design surface.-->
+<Objects
+  Version="8">
+  <!--Each node below will contain properties that do not affect runtime behavior.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
+        <NodeLayout
+          Size="158,42"
+          Id="Package\Container A\Container B\Container C\Copy file"
+          TopLeft="36,32" />
+        <ContainerLayout
+          HeaderHeight="43"
+          IsExpanded="True"
+          PanelSize="231,138"
+          Size="231,181"
+          Id="Package\Container A\Container B\Container C"
+          TopLeft="77,20" />
+        <ContainerLayout
+          HeaderHeight="43"
+          IsExpanded="True"
+          PanelSize="313,256"
+          Size="313,299"
+          Id="Package\Container A\Container B"
+          TopLeft="88,14" />
+        <ContainerLayout
+          HeaderHeight="43"
+          IsExpanded="True"
+          PanelSize="406,368"
+          Size="406,411"
+          Id="Package\Container A"
+          TopLeft="131,45" />
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>
