@@ -11,8 +11,8 @@
   DTS:LocaleID="1030"
   DTS:ObjectName="ExecuteSQL"
   DTS:PackageType="5"
-  DTS:VersionBuild="5"
-  DTS:VersionGUID="{BE0A1555-4F0A-4BBE-9446-EC47005BE66E}">
+  DTS:VersionBuild="7"
+  DTS:VersionGUID="{294E6CFE-FB53-4603-8780-6CA86D3AC78D}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -37,6 +37,26 @@
       </DTS:ObjectData>
     </DTS:ConnectionManager>
   </DTS:ConnectionManagers>
+  <DTS:PackageParameters>
+    <DTS:PackageParameter
+      DTS:CreationName=""
+      DTS:DataType="3"
+      DTS:DTSID="{8EF3BCD2-9615-4FA7-8FF1-F767FE588A3C}"
+      DTS:ObjectName="end">
+      <DTS:Property
+        DTS:DataType="3"
+        DTS:Name="ParameterValue">10</DTS:Property>
+    </DTS:PackageParameter>
+    <DTS:PackageParameter
+      DTS:CreationName=""
+      DTS:DataType="3"
+      DTS:DTSID="{0BB977C1-8547-462B-BF3C-7088D00A0D11}"
+      DTS:ObjectName="start">
+      <DTS:Property
+        DTS:DataType="3"
+        DTS:Name="ParameterValue">5</DTS:Property>
+    </DTS:PackageParameter>
+  </DTS:PackageParameters>
   <DTS:Variables>
     <DTS:Variable
       DTS:CreationName=""
@@ -83,7 +103,7 @@
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
           SQLTask:Connection="{036D5EC5-3F1B-40C5-9599-E8EB3F464C25}"
-          SQLTask:SqlStatementSource="execute Sales.USP_Sale_Total;"
+          SQLTask:SqlStatementSource="execute Sales.USP_Sale_Total&#xA;@Saler_start = ? ,&#xA;@Saler_end = ?;"
           SQLTask:ResultType="ResultSetType_SingleRow" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
           <SQLTask:ResultBinding
             SQLTask:ResultName="0"
@@ -91,6 +111,18 @@
           <SQLTask:ResultBinding
             SQLTask:ResultName="1"
             SQLTask:DtsVariableName="User::TotalSales" />
+          <SQLTask:ParameterBinding
+            SQLTask:ParameterName="0"
+            SQLTask:DtsVariableName="$Package::start"
+            SQLTask:ParameterDirection="Input"
+            SQLTask:DataType="3"
+            SQLTask:ParameterSize="-1" />
+          <SQLTask:ParameterBinding
+            SQLTask:ParameterName="1"
+            SQLTask:DtsVariableName="$Package::end"
+            SQLTask:ParameterDirection="Input"
+            SQLTask:DataType="3"
+            SQLTask:ParameterSize="-1" />
         </SQLTask:SqlTaskData>
       </DTS:ObjectData>
     </DTS:Executable>
@@ -182,8 +214,15 @@
     <LayoutInfo>
       <GraphLayout
         Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        <ContainerLayout
+          HeaderHeight="43"
+          IsExpanded="True"
+          PanelSize="205,55"
+          Size="205,98"
+          Id="Package\few Customer"
+          TopLeft="775,307" />
         <NodeLayout
-          Size="272,42"
+          Size="547,42"
           Id="Package\Get Total Sale and Number of Customers"
           TopLeft="229,78" />
         <ContainerLayout
@@ -191,170 +230,163 @@
           IsExpanded="True"
           PanelSize="205,55"
           Size="205,98"
-          Id="Package\Low Sale"
-          TopLeft="118,170" />
+          Id="Package\High Sale"
+          TopLeft="224,173" />
         <ContainerLayout
           HeaderHeight="43"
           IsExpanded="True"
           PanelSize="205,55"
           Size="205,98"
-          Id="Package\High Sale"
-          TopLeft="340,171" />
-        <EdgeLayout
-          Id="Package.PrecedenceConstraints[Constraint]"
-          TopLeft="321,120">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-100.5,50"
-              Start="0,0"
-              End="-100.5,42.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,16.1754385964912" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,16.1754385964912"
-                    Point2="0,20.1754385964912"
-                    Point3="-4,20.1754385964912" />
-                  <mssgle:LineSegment
-                    End="-96.5,20.1754385964912" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-96.5,20.1754385964912"
-                    Point2="-100.5,20.1754385964912"
-                    Point3="-100.5,24.1754385964912" />
-                  <mssgle:LineSegment
-                    End="-100.5,42.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-58.25,25.1754385964912,16,16"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package.PrecedenceConstraints[Constraint 1]"
-          TopLeft="409,120">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="33.5,51"
-              Start="0,0"
-              End="33.5,43.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,16.5789473684211" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,16.5789473684211"
-                    Point2="0,20.5789473684211"
-                    Point3="4,20.5789473684211" />
-                  <mssgle:LineSegment
-                    End="29.5,20.5789473684211" />
-                  <mssgle:CubicBezierSegment
-                    Point1="29.5,20.5789473684211"
-                    Point2="33.5,20.5789473684211"
-                    Point3="33.5,24.5789473684211" />
-                  <mssgle:LineSegment
-                    End="33.5,43.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="8.75,25.5789473684211,16,16"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
+          Id="Package\Low Sale"
+          TopLeft="14,171" />
         <ContainerLayout
           HeaderHeight="43"
           IsExpanded="True"
           PanelSize="205,55"
           Size="205,98"
           Id="Package\Many Customer"
-          TopLeft="573,170" />
-        <ContainerLayout
-          HeaderHeight="43"
-          IsExpanded="True"
-          PanelSize="205,55"
-          Size="205,98"
-          Id="Package\few Customer"
-          TopLeft="814,174" />
+          TopLeft="555,307" />
         <EdgeLayout
-          Id="Package.PrecedenceConstraints[Constraint 2]"
-          TopLeft="391.4,120">
+          Id="Package.PrecedenceConstraints[Constraint]"
+          TopLeft="367.75,120">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="284.1,50"
+              EndConnector="-251.25,51"
               Start="0,0"
-              End="284.1,42.5">
+              End="-251.25,43.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,18.3127035830619" />
+                    End="0,13.1649484536082" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,18.3127035830619"
-                    Point2="0,22.3127035830619"
-                    Point3="4,22.3127035830619" />
+                    Point1="0,13.1649484536082"
+                    Point2="0,17.1649484536082"
+                    Point3="-4,17.1649484536082" />
                   <mssgle:LineSegment
-                    End="280.1,22.3127035830619" />
+                    End="-247.25,17.1649484536082" />
                   <mssgle:CubicBezierSegment
-                    Point1="280.1,22.3127035830619"
-                    Point2="284.1,22.3127035830619"
-                    Point3="284.1,26.3127035830619" />
+                    Point1="-247.25,17.1649484536082"
+                    Point2="-251.25,17.1649484536082"
+                    Point3="-251.25,21.1649484536082" />
                   <mssgle:LineSegment
-                    End="284.1,42.5" />
+                    End="-251.25,43.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="134.05,27.3127035830619,16,16"
+              BoundingBox="-133.625,22.1649484536082,16,16"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 1]"
+          TopLeft="448.6,120">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-122.1,53"
+              Start="0,0"
+              End="-122.1,45.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,19.6033258973839" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,19.6033258973839"
+                    Point2="0,23.6033258973839"
+                    Point3="-4,23.6033258973839" />
+                  <mssgle:LineSegment
+                    End="-118.1,23.6033258973839" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-118.1,23.6033258973839"
+                    Point2="-122.1,23.6033258973839"
+                    Point3="-122.1,27.6033258973839" />
+                  <mssgle:LineSegment
+                    End="-122.1,45.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-69.05,28.6033258973839,16,16"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 2]"
+          TopLeft="502.5,120">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="155,187"
+              Start="0,0"
+              End="155,179.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,89.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,89.5"
+                    Point2="0,93.5"
+                    Point3="4,93.5" />
+                  <mssgle:LineSegment
+                    End="151,93.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="151,93.5"
+                    Point2="155,93.5"
+                    Point3="155,97.5" />
+                  <mssgle:LineSegment
+                    End="155,179.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="69.5,98.5,16,16"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 3]"
-          TopLeft="444.2,120">
+          TopLeft="637.25,120">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="472.3,54"
+              EndConnector="240.25,187"
               Start="0,0"
-              End="472.3,46.5">
+              End="240.25,179.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,11.908713692946" />
+                    End="0,58.9381443298969" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,11.908713692946"
-                    Point2="0,15.908713692946"
-                    Point3="4,15.908713692946" />
+                    Point1="0,58.9381443298969"
+                    Point2="0,62.9381443298969"
+                    Point3="4,62.9381443298969" />
                   <mssgle:LineSegment
-                    End="468.3,15.908713692946" />
+                    End="236.25,62.9381443298969" />
                   <mssgle:CubicBezierSegment
-                    Point1="468.3,15.908713692946"
-                    Point2="472.3,15.908713692946"
-                    Point3="472.3,19.908713692946" />
+                    Point1="236.25,62.9381443298969"
+                    Point2="240.25,62.9381443298969"
+                    Point3="240.25,66.9381443298969" />
                   <mssgle:LineSegment
-                    End="472.3,46.5" />
+                    End="240.25,179.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="228.15,20.908713692946,16,16"
+              BoundingBox="112.125,67.9381443298969,16,16"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>

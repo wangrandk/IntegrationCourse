@@ -26,7 +26,7 @@
           <SSIS:Property SSIS:Name="CreatorComputerName">10K3</SSIS:Property>
           <SSIS:Property SSIS:Name="Description">
           </SSIS:Property>
-          <SSIS:Property SSIS:Name="PasswordVerifier" SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAe7nlWPG7Uk+WefSQ7+90gQAAAAACAAAAAAAQZgAAAAEAACAAAAD8eow9V2Q/jt2fB5bDbfhcCsa7LLeiVoa/rRCL5RTf/AAAAAAOgAAAAAIAACAAAABovllgtXOWZq9IgUZs93wj1iUhIXARVPPPinotrBfCEZAAAADO12KcXBNVjlssQiFRqkkhNWXectHKBlnCQysLSUvEYvcyapr/sUcqDqQiTdgBJ6dHcKojnYAwuC6EDnKerWm0tO5fc/86whB0ky3HMPQIKceWfoA28OFlyMlAxgFNV8xpoSvBSosFAtslCc6uaFpTvIjpcNh/ljgmMRw8PJ2WoALJan4yrulFB+nNGmKalnFAAAAAt1e5pUCHsFQYm6ACeRCH6Ui9f4HkmjorW7GNAWXWqlrRZyC+KFBxR5uUrEFGvbzF4utF6Vtu35HjmsdWNHRddw==</SSIS:Property>
+          <SSIS:Property SSIS:Name="PasswordVerifier" SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAe7nlWPG7Uk+WefSQ7+90gQAAAAACAAAAAAAQZgAAAAEAACAAAAAjV2yFTgFrM+PKrqQynWVJn7EyMqAT8Kwf6IR7XpBnbQAAAAAOgAAAAAIAACAAAACyNfQQe8MJ8U++6XcGYHX7qZCR3xCrw1Hp8igGYt108ZAAAABXjmlHVWz32nCf94cZ4coZAxrhNQH3ePxXcKjdvTHUTsCDu3RrwKCxOIrarHb4pmRXfUDmY+1RrWXicaKJcgxXiuEC910vwx+p4GZzPGcC2nSckV21EFa1aWkeUesjDHcpAq4LZWwqJugEZu8D0ahg5pPuBrHhRunuBN12Pveeg7WsYEQPcTp2TLJXm10yQs9AAAAASMlNf2gMnEwyfFxsMx9mx5mdgjx2SObrGHIBQZgg1E7lZyYU7UCAoN+HO4yO7T08dqhcuuRuHJUNVrPfV1E1Qw==</SSIS:Property>
           <SSIS:Property SSIS:Name="FormatVersion">1</SSIS:Property>
         </SSIS:Properties>
         <SSIS:Packages>
@@ -265,16 +265,44 @@
                 <SSIS:Property SSIS:Name="Name">ExecuteSQL</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMajor">1</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionBuild">3</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionBuild">7</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionComments">
                 </SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionGUID">{86BE2539-D575-40E4-8B28-172A457C349D}</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionGUID">{294E6CFE-FB53-4603-8780-6CA86D3AC78D}</SSIS:Property>
                 <SSIS:Property SSIS:Name="PackageFormatVersion">8</SSIS:Property>
                 <SSIS:Property SSIS:Name="Description">
                 </SSIS:Property>
                 <SSIS:Property SSIS:Name="ProtectionLevel">1</SSIS:Property>
               </SSIS:Properties>
               <SSIS:Parameters>
+                <SSIS:Parameter SSIS:Name="end">
+                  <SSIS:Properties>
+                    <SSIS:Property SSIS:Name="ID">{8EF3BCD2-9615-4FA7-8FF1-F767FE588A3C}</SSIS:Property>
+                    <SSIS:Property SSIS:Name="CreationName">
+                    </SSIS:Property>
+                    <SSIS:Property SSIS:Name="Description">
+                    </SSIS:Property>
+                    <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">10</SSIS:Property>
+                    <SSIS:Property SSIS:Name="DataType">9</SSIS:Property>
+                  </SSIS:Properties>
+                </SSIS:Parameter>
+                <SSIS:Parameter SSIS:Name="start">
+                  <SSIS:Properties>
+                    <SSIS:Property SSIS:Name="ID">{0BB977C1-8547-462B-BF3C-7088D00A0D11}</SSIS:Property>
+                    <SSIS:Property SSIS:Name="CreationName">
+                    </SSIS:Property>
+                    <SSIS:Property SSIS:Name="Description">
+                    </SSIS:Property>
+                    <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">5</SSIS:Property>
+                    <SSIS:Property SSIS:Name="DataType">9</SSIS:Property>
+                  </SSIS:Properties>
+                </SSIS:Parameter>
                 <SSIS:Parameter SSIS:Name="CM.10K3\SQL2016PRIM.WideWorldImporters.ConnectionString">
                   <SSIS:Properties>
                     <SSIS:Property SSIS:Name="ID">
