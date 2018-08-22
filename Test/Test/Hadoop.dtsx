@@ -1,37 +1,37 @@
-<?xml version="1.0"?>
+﻿<?xml version="1.0"?>
 <DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
   DTS:refId="Package"
-  DTS:CreationDate="8/22/2018 11:53:21 AM"
+  DTS:CreationDate="8/22/2018 10:34:11 AM"
   DTS:CreationName="Microsoft.Package"
   DTS:CreatorComputerName="10K3"
   DTS:CreatorName="10K3\Administrator"
-  DTS:DTSID="{5AA1B7A3-991C-4E28-9B79-C81E80E83384}"
+  DTS:DTSID="{BF0D89EF-B716-4376-B6D3-7883A9D904A5}"
   DTS:ExecutableType="Microsoft.Package"
   DTS:LastModifiedProductVersion="14.0.0500.272"
   DTS:LocaleID="1030"
-  DTS:ObjectName="Package1"
+  DTS:ObjectName="Hadoop"
   DTS:PackageType="5"
-  DTS:VersionBuild="2"
-  DTS:VersionGUID="{20E97C76-A761-404D-8076-27E85D846A68}">
+  DTS:VersionBuild="1"
+  DTS:VersionGUID="{CE5D4337-251C-4BB0-BF81-35ED79ECC615}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:Variables />
   <DTS:Executables>
     <DTS:Executable
-      DTS:refId="Package\RECREATE Dim table"
-      DTS:CreationName="Microsoft.ExecuteSQLTask"
-      DTS:Description="Execute SQL Task"
-      DTS:DTSID="{1A206E88-2C16-4A28-BB54-B988FBCC1A00}"
-      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:refId="Package\Hadoop File System Task"
+      DTS:CreationName="HadoopFileSystemTask"
+      DTS:Description="Hadoop File System Task"
+      DTS:DTSID="{0CE821E6-D5BF-4A5B-A4C3-5F6229732819}"
+      DTS:ExecutableType="HadoopFileSystemTask"
       DTS:LocaleID="-1"
-      DTS:ObjectName="RECREATE Dim table"
-      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server vNext CTP2.0; © 2017 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ObjectName="Hadoop File System Task"
+      DTS:TaskContact="Hadoop File System Task; (C) Microsoft Corporation; All Rights Reserved"
       DTS:ThreadHint="0">
       <DTS:Variables />
       <DTS:ObjectData>
-        <SQLTask:SqlTaskData
-          SQLTask:Connection="{036D5EC5-3F1B-40C5-9599-E8EB3F464C25}"
-          SQLTask:SqlStatementSource="execute DW.USP_Recreate_Dim_Tables;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+        <HadoopFileSystemTask
+          Operation="CopyToHDFS"
+          HadoopFileType="File" />
       </DTS:ObjectData>
     </DTS:Executable>
   </DTS:Executables>
@@ -48,9 +48,9 @@
       <GraphLayout
         Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
         <NodeLayout
-          Size="178,42"
-          Id="Package\RECREATE Dim table"
-          TopLeft="331,159" />
+          Size="197,42"
+          Id="Package\Hadoop File System Task"
+          TopLeft="165,107" />
       </GraphLayout>
     </LayoutInfo>
   </Package>

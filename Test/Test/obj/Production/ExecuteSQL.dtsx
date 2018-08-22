@@ -5,21 +5,21 @@
   DTS:CreationName="Microsoft.Package"
   DTS:CreatorComputerName="10K3"
   DTS:CreatorName="10K3\Administrator"
-  DTS:DTSID="{76805E74-A95C-4C0F-9C68-5C3F6E93BD5F}"
+  DTS:DTSID="{90743F06-C78F-41B4-BC72-F024851B02A0}"
   DTS:ExecutableType="Microsoft.Package"
   DTS:LastModifiedProductVersion="14.0.0500.272"
   DTS:LocaleID="1030"
   DTS:ObjectName="ExecuteSQL"
   DTS:PackageType="5"
   DTS:VersionBuild="7"
-  DTS:VersionGUID="{294E6CFE-FB53-4603-8780-6CA86D3AC78D}">
+  DTS:VersionGUID="{5D0C843E-2028-483A-B15B-C6F214B89838}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
     <DTS:ConnectionManager
       DTS:refId="Package.ConnectionManagers[10K3\SQL2016PRIM.WideWorldImporters]"
       DTS:CreationName="OLEDB"
-      DTS:DTSID="{036D5EC5-3F1B-40C5-9599-E8EB3F464C25}"
+      DTS:DTSID="{E4C239F8-E35C-4F3C-A8EC-5B3CA8A7C626}"
       DTS:ObjectName="10K3\SQL2016PRIM.WideWorldImporters">
       <DTS:ObjectData>
         <DTS:ConnectionManager
@@ -29,7 +29,7 @@
     <DTS:ConnectionManager
       DTS:refId="Package.ConnectionManagers[SQLQuery.sql]"
       DTS:CreationName="FILE"
-      DTS:DTSID="{6832C83D-DF8B-4D7E-BD4E-B3E5170859AF}"
+      DTS:DTSID="{97647BC5-3532-4085-A267-BCBD64DEE494}"
       DTS:ObjectName="SQLQuery.sql">
       <DTS:ObjectData>
         <DTS:ConnectionManager
@@ -41,7 +41,7 @@
     <DTS:PackageParameter
       DTS:CreationName=""
       DTS:DataType="3"
-      DTS:DTSID="{8EF3BCD2-9615-4FA7-8FF1-F767FE588A3C}"
+      DTS:DTSID="{E20C3E5B-B036-43E4-A072-B8B946F684B3}"
       DTS:ObjectName="end">
       <DTS:Property
         DTS:DataType="3"
@@ -50,7 +50,7 @@
     <DTS:PackageParameter
       DTS:CreationName=""
       DTS:DataType="3"
-      DTS:DTSID="{0BB977C1-8547-462B-BF3C-7088D00A0D11}"
+      DTS:DTSID="{2A2945C1-7ADC-4AC4-B405-6492F865D1F4}"
       DTS:ObjectName="start">
       <DTS:Property
         DTS:DataType="3"
@@ -60,7 +60,7 @@
   <DTS:Variables>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{0E908B81-DD38-4115-B8A4-9BD4C823A0BF}"
+      DTS:DTSID="{C152E158-4F93-4BD8-83E7-8C2EC3597F8F}"
       DTS:IncludeInDebugDump="6789"
       DTS:Namespace="User"
       DTS:ObjectName="NumberCustomers">
@@ -69,7 +69,7 @@
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{6F614ABE-74BB-4A49-AC87-6139E4E566E6}"
+      DTS:DTSID="{422D074C-BE44-4DAF-BE62-BC0B9CC84800}"
       DTS:IncludeInDebugDump="6789"
       DTS:Namespace="User"
       DTS:ObjectName="TotalSales">
@@ -82,7 +82,7 @@
       DTS:refId="Package\few Customer"
       DTS:CreationName="STOCK:SEQUENCE"
       DTS:Description="Sequence Container"
-      DTS:DTSID="{87E263B0-A31E-48D0-876C-EB00596E86E6}"
+      DTS:DTSID="{EAD0DBDD-A7E8-421F-BE19-00990FF77A87}"
       DTS:ExecutableType="STOCK:SEQUENCE"
       DTS:LocaleID="-1"
       DTS:ObjectName="few Customer">
@@ -93,7 +93,7 @@
       DTS:refId="Package\Get Total Sale and Number of Customers"
       DTS:CreationName="Microsoft.ExecuteSQLTask"
       DTS:Description="Execute SQL Task"
-      DTS:DTSID="{E2F6CAE8-8D57-41A9-B158-611B0810EDBC}"
+      DTS:DTSID="{626FC526-C889-4938-812F-5DB7D850DA6E}"
       DTS:ExecutableType="Microsoft.ExecuteSQLTask"
       DTS:LocaleID="-1"
       DTS:ObjectName="Get Total Sale and Number of Customers"
@@ -102,7 +102,7 @@
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
-          SQLTask:Connection="{036D5EC5-3F1B-40C5-9599-E8EB3F464C25}"
+          SQLTask:Connection="{E4C239F8-E35C-4F3C-A8EC-5B3CA8A7C626}"
           SQLTask:SqlStatementSource="execute Sales.USP_Sale_Total&#xA;@Saler_start = ? ,&#xA;@Saler_end = ?;"
           SQLTask:ResultType="ResultSetType_SingleRow" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
           <SQLTask:ResultBinding
@@ -130,7 +130,7 @@
       DTS:refId="Package\High Sale"
       DTS:CreationName="STOCK:SEQUENCE"
       DTS:Description="Sequence Container"
-      DTS:DTSID="{C75ED779-AA05-4154-8E5F-E9D303A8E8EA}"
+      DTS:DTSID="{59A790A3-461E-4FA4-8171-F7747E800845}"
       DTS:ExecutableType="STOCK:SEQUENCE"
       DTS:LocaleID="-1"
       DTS:ObjectName="High Sale">
@@ -141,7 +141,7 @@
       DTS:refId="Package\Low Sale"
       DTS:CreationName="STOCK:SEQUENCE"
       DTS:Description="Sequence Container"
-      DTS:DTSID="{DCB5198F-8147-424B-AA6A-1454988233E2}"
+      DTS:DTSID="{2EAF1118-3DE2-42AC-A021-2150CEFBF2CD}"
       DTS:ExecutableType="STOCK:SEQUENCE"
       DTS:LocaleID="-1"
       DTS:ObjectName="Low Sale">
@@ -152,7 +152,7 @@
       DTS:refId="Package\Many Customer"
       DTS:CreationName="STOCK:SEQUENCE"
       DTS:Description="Sequence Container"
-      DTS:DTSID="{63856DE6-A9A1-4379-90FA-741BAFF1A8DB}"
+      DTS:DTSID="{CA9DCA74-55ED-42C9-A9B1-84788CBC8F44}"
       DTS:ExecutableType="STOCK:SEQUENCE"
       DTS:LocaleID="-1"
       DTS:ObjectName="Many Customer">
@@ -164,7 +164,7 @@
     <DTS:PrecedenceConstraint
       DTS:refId="Package.PrecedenceConstraints[Constraint]"
       DTS:CreationName=""
-      DTS:DTSID="{8E3F46CE-F11B-4A2A-A974-E89AD6513A5C}"
+      DTS:DTSID="{1E5095D8-E658-4539-BC6D-DA47F4CC84BD}"
       DTS:EvalOp="3"
       DTS:Expression="@[User::TotalSales] &lt; 1000000"
       DTS:From="Package\Get Total Sale and Number of Customers"
@@ -174,7 +174,7 @@
     <DTS:PrecedenceConstraint
       DTS:refId="Package.PrecedenceConstraints[Constraint 1]"
       DTS:CreationName=""
-      DTS:DTSID="{B5A6B716-DF3E-4A88-BDA1-9A28191A95CC}"
+      DTS:DTSID="{DD567354-8BE1-4DAE-B09A-AC8B1AA21D40}"
       DTS:EvalOp="3"
       DTS:Expression="@[User::TotalSales] &gt;1000000"
       DTS:From="Package\Get Total Sale and Number of Customers"
@@ -184,7 +184,7 @@
     <DTS:PrecedenceConstraint
       DTS:refId="Package.PrecedenceConstraints[Constraint 2]"
       DTS:CreationName=""
-      DTS:DTSID="{996B0E8B-3C0B-467A-8EC2-3EAD39491F3D}"
+      DTS:DTSID="{2608CE4C-3042-47A6-BBD1-53A68FA2B5AD}"
       DTS:EvalOp="3"
       DTS:Expression="@[User::NumberCustomers] &gt;500"
       DTS:From="Package\Get Total Sale and Number of Customers"
@@ -194,7 +194,7 @@
     <DTS:PrecedenceConstraint
       DTS:refId="Package.PrecedenceConstraints[Constraint 3]"
       DTS:CreationName=""
-      DTS:DTSID="{005F6B44-E7C6-4666-AB07-0E80790B2E2F}"
+      DTS:DTSID="{C3E487CC-28E0-4DC0-AE69-CFBD1D1651A5}"
       DTS:EvalOp="3"
       DTS:Expression="@[User::NumberCustomers]&lt;500"
       DTS:From="Package\Get Total Sale and Number of Customers"
