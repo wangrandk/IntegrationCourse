@@ -2,7 +2,7 @@
 <BuildLog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <ProjectInfo>
     <Name>Test</Name>
-    <LastWriteTime>2018-08-23T08:58:34.802234Z</LastWriteTime>
+    <LastWriteTime>2018-08-23T12:08:36.1998664Z</LastWriteTime>
     <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
   </ProjectInfo>
   <LastBuildInfos>
@@ -38,7 +38,12 @@
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
       <Name>ImportData.dtsx</Name>
-      <LastWriteTime>2018-08-23T09:35:59.4715579Z</LastWriteTime>
+      <LastWriteTime>2018-08-23T10:07:44.6473988Z</LastWriteTime>
+      <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
+    </ProjectBuildItemInfo>
+    <ProjectBuildItemInfo>
+      <Name>Fejl.dtsx</Name>
+      <LastWriteTime>2018-08-23T12:31:25.3518942Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
   </LastBuildInfos>

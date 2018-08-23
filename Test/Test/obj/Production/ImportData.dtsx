@@ -11,8 +11,8 @@
   DTS:LocaleID="19"
   DTS:ObjectName="ImportData"
   DTS:PackageType="5"
-  DTS:VersionBuild="41"
-  DTS:VersionGUID="{F805768A-CA98-4D21-9EF4-49AF76D1C5D0}">
+  DTS:VersionBuild="45"
+  DTS:VersionGUID="{9283BDA4-B536-4653-BA07-50A52DEAE85D}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -262,7 +262,8 @@
       DTS:ExecutableType="Microsoft.Pipeline"
       DTS:LocaleID="1030"
       DTS:ObjectName="Import CSV"
-      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:TransactionOption="2">
       <DTS:Variables />
       <DTS:ObjectData>
         <pipeline

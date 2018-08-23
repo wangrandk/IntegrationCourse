@@ -26,7 +26,7 @@
           <SSIS:Property SSIS:Name="CreatorComputerName">10K3</SSIS:Property>
           <SSIS:Property SSIS:Name="Description">
           </SSIS:Property>
-          <SSIS:Property SSIS:Name="PasswordVerifier" SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAe7nlWPG7Uk+WefSQ7+90gQAAAAACAAAAAAAQZgAAAAEAACAAAAAQgEX1R6Vn9UvoWXaIumNjMQvwu1/xv5BD0yAneoKyBAAAAAAOgAAAAAIAACAAAAAtIzV+AL8NYe+MZZjQPHuodHUrgK85JgT/ambpwNUbTpAAAACFR5ghAI1Xe9S2ywthZLtwmx6ljbufQ7rXSOQfARCpLYs1aWffAy7U6oytKbp1mFuIjH6/rSiwBzzupefFFrsD0WBMhvcc2UNaGO3nGPELVjMhDUXpHcdDRQZYnScocX5IZ5+MHi8jobo3kBDZT0bKkfqtno9QJWtqp3rYUz6hi3esUoxEX4ZVmdisVbX7LulAAAAAH9iuJui5LrOwV0bJ5VTtmMlbpJnLL7lns5Uwb6rjyKUPiVdXx4FdZv1mwZWlVDUGutKdIvM+V4uKdC7M202LPw==</SSIS:Property>
+          <SSIS:Property SSIS:Name="PasswordVerifier" SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAe7nlWPG7Uk+WefSQ7+90gQAAAAACAAAAAAAQZgAAAAEAACAAAAAtTQDEHhPx1QIe3MxVF3fH7PPP+bEzLYWVjU7yPTJ5oQAAAAAOgAAAAAIAACAAAACL1+ycSuG8VVb2PYXtt4JaQ2cV3fXQEOjiu7M0RCb+bZAAAAAMGtaDUQdGejnOkOofCTFfODDh4MvDTrsmNWSPV5Oy6GVRZTLodVezmeO8WtlNhS2GVkTtjkGoC9h7HpWhduq+xVfqnyBpy0tYHrmSO5J6uf2yNp1zzmq6q0Wbj/JmclZ3TpPhNQxpUvxy3Nz0a1bJg4M3JZRMtxnjb1YnGcankFVi5oqnYJguWdiGU49hqtRAAAAAfiSOVqxDp/s9aq3fbpxOASIpjGELqmtwtuFd13KhIzRTAtwXxHpx+0224loPQHGaadq64hoxpZ26AV9tPfnWmw==</SSIS:Property>
           <SSIS:Property SSIS:Name="FormatVersion">1</SSIS:Property>
         </SSIS:Properties>
         <SSIS:Packages>
@@ -37,6 +37,7 @@
           <SSIS:Package SSIS:Name="RecreateFact.dtsx" SSIS:EntryPoint="1" />
           <SSIS:Package SSIS:Name="ExecuteSQL.dtsx" SSIS:EntryPoint="1" />
           <SSIS:Package SSIS:Name="ImportData.dtsx" SSIS:EntryPoint="1" />
+          <SSIS:Package SSIS:Name="Fejl.dtsx" SSIS:EntryPoint="1" />
         </SSIS:Packages>
         <SSIS:ConnectionManagers>
           <SSIS:ConnectionManager SSIS:Name="SQL2016PRIM.WideWorldImporters.conmgr" />
@@ -433,10 +434,10 @@
                 <SSIS:Property SSIS:Name="Name">ImportData</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMajor">1</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionBuild">26</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionBuild">45</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionComments">
                 </SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionGUID">{BFE9A077-462F-4B40-9974-59533312BA16}</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionGUID">{9283BDA4-B536-4653-BA07-50A52DEAE85D}</SSIS:Property>
                 <SSIS:Property SSIS:Name="PackageFormatVersion">8</SSIS:Property>
                 <SSIS:Property SSIS:Name="Description">
                 </SSIS:Property>
@@ -985,6 +986,23 @@
                   </SSIS:Properties>
                 </SSIS:Parameter>
               </SSIS:Parameters>
+            </SSIS:PackageMetaData>
+            <SSIS:PackageMetaData SSIS:Name="Fejl.dtsx">
+              <SSIS:Properties>
+                <SSIS:Property SSIS:Name="ID">{F51F05C5-F1EE-4A8E-B946-4AC8E89636F2}</SSIS:Property>
+                <SSIS:Property SSIS:Name="Name">Fejl</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionMajor">1</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionBuild">9</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionComments">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionGUID">{CD3E2AC4-FB9E-4964-9C92-EC41CE077ED4}</SSIS:Property>
+                <SSIS:Property SSIS:Name="PackageFormatVersion">8</SSIS:Property>
+                <SSIS:Property SSIS:Name="Description">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="ProtectionLevel">1</SSIS:Property>
+              </SSIS:Properties>
+              <SSIS:Parameters />
             </SSIS:PackageMetaData>
           </SSIS:PackageInfo>
         </SSIS:DeploymentInfo>
