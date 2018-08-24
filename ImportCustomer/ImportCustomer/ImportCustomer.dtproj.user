@@ -4,25 +4,8 @@
     <Configuration>
       <Name>Development</Name>
       <Options>
-        <StartObjectID>Container.dtsx</StartObjectID>
-        <UserIDs />
-        <UserPasswords />
-        <OfflineMode>false</OfflineMode>
-        <ProgressReporting>true</ProgressReporting>
-        <ParameterConfigurationSensitiveValues>
-          <ConfigurationSetting>
-            <Id>LastModifiedTime</Id>
-            <Name>LastModifiedTime</Name>
-            <Value xsi:type="xsd:dateTime">2018-08-21T08:12:08.7233086Z</Value>
-          </ConfigurationSetting>
-        </ParameterConfigurationSensitiveValues>
-      </Options>
-    </Configuration>
-    <Configuration>
-      <Name>Production</Name>
-      <Options>
         <ServerName>10K3\SQL2016PRIM</ServerName>
-        <PathOnServer>/SSISDB/BI/Test</PathOnServer>
+        <PathOnServer>/SSISDB/BI/Customer_BI</PathOnServer>
         <UserIDs />
         <UserPasswords />
         <OfflineMode>false</OfflineMode>
@@ -31,7 +14,7 @@
           <ConfigurationSetting>
             <Id>LastModifiedTime</Id>
             <Name>LastModifiedTime</Name>
-            <Value xsi:type="xsd:dateTime">2018-08-21T09:52:01.5512429Z</Value>
+            <Value xsi:type="xsd:dateTime">2018-08-24T09:29:14.8429518Z</Value>
           </ConfigurationSetting>
         </ParameterConfigurationSensitiveValues>
       </Options>

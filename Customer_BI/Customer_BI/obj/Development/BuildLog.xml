@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<BuildLog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ProjectInfo>
+    <Name>Customer_BI</Name>
+    <LastWriteTime>2018-08-24T13:38:27.4821199Z</LastWriteTime>
+    <LastKnownProtectionLevel>EncryptSensitiveWithPassword</LastKnownProtectionLevel>
+    <Salt>kHLiwXDD</Salt>
+    <LastKnownProtectedHashedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAe7nlWPG7Uk+WefSQ7+90gQAAAAACAAAAAAAQZgAAAAEAACAAAAAMSdTPtywTZCW/CyOiTJuWDhdMdLPZ4VyCx5CJiUoGagAAAAAOgAAAAAIAACAAAADYzUY5gYhMsI37jaFI2yDLgSfaaq2OVvw0iA8XSSRdjjAAAADO+9pzMCmlpSdVjbJbPMN16LBX+lsir04mieU9ANBse38N/kkAcfSlJPQVCUuVEzdAAAAAAAjNv+0EZ0lCaOWLQJl4qBPtkM+ag207o47j+tusQK4bT5O0ArGXwhDywuoGW3XLsivjppfxz0J2zUSEP9lXnA==</LastKnownProtectedHashedPassword>
+  </ProjectInfo>
+  <LastBuildInfos>
+    <ProjectBuildItemInfo>
+      <Name>ExportCustomer.dtsx</Name>
+      <LastWriteTime>2018-08-24T13:38:25.3704103Z</LastWriteTime>
+      <LastKnownProtectionLevel>EncryptSensitiveWithPassword</LastKnownProtectionLevel>
+      <Salt>lYikAjtk</Salt>
+      <LastKnownProtectedHashedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAe7nlWPG7Uk+WefSQ7+90gQAAAAACAAAAAAAQZgAAAAEAACAAAAB/8yXs7gNvwER433JIaIvhxFBFFCR97qtkwQV7R8Y7qwAAAAAOgAAAAAIAACAAAACTYV0LFML78VzXIxLaxgFkjPbGWaLyGYFO5l78fM3sjjAAAACnSMYUOPGKd4wXfC82XSs9sENh1BJJfX7EJvdoVIMi575HyJnHWMeSbm3LUGyrGKJAAAAAx4hiv4zci2uSH5bn989WnzthfK3yD9FFiCG2JDD5LMsFXCauVrEADoSg9B7OlPezVgcrtXz8rIBuY0VmVw9xEA==</LastKnownProtectedHashedPassword>
+    </ProjectBuildItemInfo>
+  </LastBuildInfos>
+</BuildLog>
